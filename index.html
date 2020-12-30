@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/bradley-gratis" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a4b4d7038.js" crossorigin="anonymous"></script>
+    <title>Raging Angel</title>
+</head>
+<div class="contenedor">
+    <header class="header">
+        <div class="header__title side1">
+            <p class="title">Raging</p>
+        </div>
+        <div class="header__title side2">
+            <p class="title2">Angel</p>
+            <nav class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <ul class="nav__ul">    
+                    <li class="nav__li"><a class="nav__link" href="">HOME</a></li>
+                    <li class="nav__li"><a class="nav__link" href="">SHOP</a></li>
+                    <li class="nav__li">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i><span class="badge rounded-circle" id="badge">0</span></a>
+                    </li>
+                    <li class="nav__li"><a class="nav__link" href="">LOOKBOOK</a></li>
+                    <li class="nav__li"><a class="nav__link" href="">ABOUT</a></li>
+                </ul>   
+            </nav>
+        </div>
+    </header>
+    <body>
+        <div id="content">
+            <div id="left">
+                <a href="#" id="abrir"><img src="items/grayfront.png" alt=""></a>
+                <a href="#" id="abrir1"><img src="items/Shearlingsfront.png" alt=""></a>
+            </div>
+            <div id="right">
+                <a href="#" id="abrir2"><img src="items/redfront.png" alt=""></a>
+                <a href="#" id="abrir3"><img src="items/PurpleFront.png" alt=""></a>
+            </div>
+        </div>
+        <div id="miModal" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header flex">
+                        <h2 class="precio">Gray Puffer</h2>
+                        <span class="close" id="close">&times;</span>
+                    </div>
+                    <div class="modal-body row">
+                        <img src="grey/Front.png" alt="">
+                        <img src="grey/Diagonal.png" alt="">
+                        <img src="grey/Back.png" alt="">
+                        <img src="grey/Free01.png" alt="">
+                        <img src="grey/Free1.png" alt="">
+                        <img src="grey/Free2.png" alt="">
+                        <img src="grey/Free3.png" alt="">
+
+                        <div class="modal-details">
+                            <h3 class="details-left">-Hooded Press Button <br>
+                                -Dual Chest  Pocket <br>
+                                -Internal Pocket</h3>
+                            <h3 class="details-right">-Extra Premium Padding <br>
+                                -Depth Padding <br>
+                                -Zip Up <br>
+                                -Metal  Button Up
+                            </h3>
+                        </div>    
+                    </div>
+                    <div class="modal-footer">
+                        <i class="fas fa-shopping-cart"></i><input type="button" onclick="myFunction();" id="buy" class="buy product" price="215" title="Gray Jacket" value="Add to Cart">
+                        <h2 style="color: white;display:inline-block;position:relative;left:38px;font-size:15px;font-family:helvetica, bold;">Free Shipping</h2>
+                        <h2 class="price">$ 215</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="miModal1" class="modal">
+            <div class="flex" id="flex1">
+                <div class="contenido-modal">
+                    <div class="modal-header flex">
+                        <h2 class="precio">Shearling Jacket</h2>
+                        <span class="close" id="close1">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="jacket/Front.png" alt="">
+                        <img src="jacket/Diagonal.png" alt="">
+                        <img src="jacket/Side.png" alt="">
+                        <img src="jacket/Back.png" alt="">
+                        <img src="jacket/free1.png" alt="">
+                        <img src="jacket/free2.png" alt="">
+                        <img src="jacket/free3.png" alt="">
+                        <img src="jacket/free4.png" alt="">
+                        <img src="jacket/free5.png" alt="">
+                        <div class="modal-details">
+                            <h3 class="details-left">-Tan Wool Pelt <br>
+                                -Plated Zipper <br>
+                            </h3>
+                            <h3 class="details-right">-Neck Belt <br>
+                                -Internal Fur
+                            </h3>
+                        </div>    
+                    </div>
+                    <div class="modal-footer">  
+                        <i class="fas fa-shopping-cart"></i><input type="button" onclick="myFunction();" class="buy product" price="285" title="Shearling Jacket" value="Add to Cart">
+                        <h2 style="color: white;display:inline-block;position:relative;left:38px;font-size:15px;font-family:helvetica, bold;">Free Shipping</h2>
+                        <h2 class="price">$ 285</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="miModal2" class="modal">
+            <div class="flex" id="flex2">
+                <div class="contenido-modal">
+                    <div class="modal-header flex">
+                        <h2 class="precio">Black Jacket</h2>
+                        <span class="close" id="close2">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="BlackRed/Front.png" alt="">
+                        <img src="BlackRed/FrontCovered.png" alt="">
+                        <img src="blackred/Diagonal.png" alt="">
+                        <img src="blackred/Side.png" alt="">
+                        <img src="blackred/Back.png" alt="">
+                        <img src="blackred/free.png" alt="">
+                        <img src="blackred/free2.png" alt="">
+                        <img src="blackred/free3.png" alt="">
+                        <div class="modal-details">
+                            <h3 class="details-left">-Hooded Press Button <br>
+                                -Dual Chest  Pocket <br>
+                                -Internal Pocket</h3>
+                            <h3 class="details-right">-Extra Premium Padding <br>
+                                -Depth Padding <br>
+                                -Zip Up <br>
+                                -Metal  Button Up
+                            </h3>
+                        </div>    
+                    </div>
+                    <div class="modal-footer">
+                        <i class="fas fa-shopping-cart"></i><input type="button" onclick="myFunction();" class="buy product" price="215" title="Black Jacket" value="Add to Cart">
+                        <h2 style="color: white;display:inline-block;position:relative;left:38px;font-size:15px;font-family:helvetica, bold;">Free Shipping</h2>
+                        <h2 class="price">$ 215</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="miModal3" class="modal">
+            <div class="flex" id="flex3">
+                <div class="contenido-modal">
+                    <div class="modal-header flex">
+                        <h2 class="precio">Purple Jacket</h2>
+                        <span class="close" id="close3">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="purple/Front.png" alt="">
+                        <img src="purple/Diagonal.png" alt="">
+                        <img src="purple/Side.png" alt="">
+                        <img src="purple/Back.png" alt="">
+                        <img src="purple/free1.png" alt="">
+                        <img src="purple/free2.png" alt="">
+                        <img src="purple/free3.png" alt="">
+                        <img src="purple/free4.png" alt="">
+                        <img src="purple/free5.png" alt="">
+                        <img src="purple/free6.png" alt="">
+                        <img src="" alt="">
+                        <div class="modal-details">
+                            <h3 class="details-left">-Purple Premium Padding <br>
+                                -Zip Up</h3>
+                            <h3 class="details-right">-Press Button Up <br>
+                                -Firm Wind Protection
+                            </h3>
+                        </div>    
+                    </div>
+                    <div class="modal-footer">
+                        <i class="fas fa-shopping-cart"></i><input type="button" onclick="myFunction();" class="buy product" price="185" title="Purple Jacket" value="Add to Cart">
+                        <h2 style="color: white;display:inline-block;position:relative;left:38px;font-size:15px;font-family:helvetica, bold;">Free Shipping</h2>
+                        <h2 class="price">$ 185</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="minicart.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // initial cart setup 
+        paypal.minicart.render({
+        strings:{
+        button:'Pay'
+        ,buttonAlt: "Total"
+        ,subtotal: 'Total:'
+        ,empty: 'There are no products in the cart.'
+        }
+        });
+        // Events to add products to cart
+        
+        $('.product').click(function(e){
+            e.stopPropagation();
+            paypal.minicart.cart.add({
+            business: 'ragingangels.us@gmail.com', // PayPal account to receive the money
+            item_name: $(this).attr("title"),
+            amount: $(this).attr("price"),
+            currency_code: 'USD',
+            
+            });
+        });
+
+        $('.cart').click(function(e){
+            e.stopPropagation();
+            paypal.minicart.cart.add({
+            business: 'ragingangels.us@gmail.com', // PayPal account to receive the money
+            item_name: $(this).attr("title"),
+            amount: $(this).attr("price"),
+            currency_code: 'USD',
+            
+            });
+        });
+    </script>
+    <script>
+    var a = 0;
+        function myFunction() {
+        a = a + 1;
+        document.getElementById("badge").textContent = a;
+    }    
+    </script>
+    </body>
+</div>
+</html>
