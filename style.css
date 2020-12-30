@@ -29,7 +29,7 @@ body{
     font-family: 'Pirata One', cursive;
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 45px;
     background-color: white;
     box-sizing: border-box;
     
@@ -42,7 +42,7 @@ body{
     font-family: 'Pirata One', cursive;
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 45px;
     width: 25%;
     box-sizing: border-box;
 }
@@ -60,7 +60,7 @@ body{
     font-family: 'Pirata One', cursive;
     font-weight: normal;
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
     text-align:center;
 }
 .nav__li {
