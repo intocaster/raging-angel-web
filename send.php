@@ -10,12 +10,12 @@ $paypal = $_POST['paypal']
 $destinatario = "intocaster@gmail.com";
 $asunto = "Purchase Summary";
 
-$carta = "Customer: $nombre \n";
+$carta = "Customer: $name \n";
 $carta .= "email: $email \n";
-$carta .= "Phone Number: $phone \n";
-$carta .= "Address Line 1: $line1 \n";
-$carta .= "Address Line 2: $line2 \n";
-$carta .= "Transaction ID: $paypal \n";
+$carta .= "Phone-Number: $phone \n";
+$carta .= "Address-Line-1: $line1 \n";
+$carta .= "Address-Line-2: $line2 \n";
+$carta .= "Transaction-ID: $paypal \n";
 $header = "Sent from the Raging Angel store";
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta, $header);
