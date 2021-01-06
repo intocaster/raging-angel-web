@@ -19,16 +19,7 @@ $carta .= "Transaction ID: $paypal \n";
 $header = "Sent from the Raging Angel store";
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta, $header);
-echo "<script>alert('Your order has been successfully processed.'</script>";
-echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
-
-
-
-
-
-
-
-
+header('Location:index.html');
 
 
 
