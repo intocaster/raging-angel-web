@@ -1,10 +1,10 @@
 <?php
-$name = $_POST['name']
-$phone = $_POST['phone']
-$email = $_POST['email']
-$line1 = $_POST['line1']
-$line2 = $_POST['line2']
-$paypal = $_POST['paypal']
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$line1 = $_POST['line1'];
+$line2 = $_POST['line2'];
+$paypal = $_POST['paypal'];
 
 // Datos para el correo
 $destinatario = "intocaster@gmail.com";
