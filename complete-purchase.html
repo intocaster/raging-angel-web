@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Purchase</title>
+</head>
+<body>
+    <section>
+        <form action="send.php" method="POST">
+            <h2>Complete the spaces to process your shipment</h2>
+            <div>
+                <label for="names">Names</label>
+                <input type="text" class="names" name="name" placeholder="Enter your name" required>
+
+                <label for="email">E-mail</label>
+                <input type="text" class="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Cell Phone</label>
+                <input type="text" class="phone" name="phone" placeholder="Enter you phone number">
+                <div class="elements">
+                    <label for="items">Select your products</label><br>
+
+                    <input type="checkbox" name="gray">Gray Puffer 
+                    <label for="itemsnumber">Number of elements</label>
+                    <input type="number" class="itemsnumber">
+
+                    <input type="checkbox" name="shearling">Shearling Jacket
+                    <label for="itemsnumber">Number of elements</label>
+                    <input type="number" class="itemsnumber">
+
+                    <input type="checkbox" name="black">Black Jacket 
+                    <label for="itemsnumber">Number of elements</label>
+                    <input type="number" class="itemsnumber">
+
+                    <input type="checkbox" name="purple">Purple Jacket 
+                    <label for="itemsnumber">Number of elements</label>
+                    <input type="number" class="itemsnumber">
+                </div>
+                <h3>Address</h3>
+                <label for="line1">Line 1</label>
+                <input type="text" class="address" name="line1" placeholder="Line 1 Address" required>
+                
+                <label for="line2">Line 2</label>
+                <input type="text" class="address" name="line2" placeholder="Line 2 Address" required>
+
+                <label for="paypal">PayPal Transaction ID</label>
+                <input type="text" minlength="17" maxlength="17" class="ppid" name="paypal" placeholder="Transacction ID IMPORTANT" required>
+                
+                <input type="submit" value="Finish Purchase" class="submit">
+
+            </div>
+
+        </form>
+    </section>
+</body>
+
+
+</html>
